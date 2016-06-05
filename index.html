@@ -8,19 +8,56 @@
     <meta name="theme-color" content="#e9e9e9">
     <title>TableGrid</title>
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>TableGrid</h1>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>TableGrid</h1>
+            </div>
           </div>
         </div>
-      </div>
+      </header>
+      <section>
+        <article>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <pre><code> 
+@media (min-width: 640px) { <br>
+	.container { <br>
+	    display: block; <br>
+		margin: 0 auto; <br>
+		max-width: 1170px <br>
+	} <br>
+	.container-fluid { <br>
+		display: block <br>
+	} <br>
+	.row, <br>
+	.max-row { <br>
+		display: table; <br>
+		table-layout: fixed; <br>
+		width: 100% <br>
+	} <br>
+	.col { <br>
+		display: table-cell <br>
+	} <br>
+	.row { <br>
+		margin: 0 auto; <br>
+		max-width: 1170px <br>
+	} <br>
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </div>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="main.min.js"></script>
   </body>
 </html>
