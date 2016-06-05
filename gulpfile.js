@@ -14,7 +14,7 @@ gulp.task('stylus', function() {
   .pipe(stylus({
     compress: true
   }))
-  .pipe(gulp.dest('./css'));
+  .pipe(gulp.dest('./'));
 });
 
 
@@ -40,7 +40,7 @@ gulp.task('js', function() {
   return gulp.src('assets/js/*.js')
     .pipe(uglify())
     .pipe(concat('main.min.js'))
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./'));
 });
 
 

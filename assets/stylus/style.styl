@@ -1,0 +1,55 @@
+// ========================
+// FRAMEWORK RPESSOA
+// ========================
+site-width 	= 1170px
+desktop		= 1024px
+tablet 		= 768px
+mobile 		= 640px
+old-mobile 	= 480px
+
+
+estrutura()
+	.container
+		display block
+		margin 0 auto
+		max-width site-width
+		
+	.container-fluid
+		display block
+		
+	.row
+	.max-row
+		display table
+		table-layout fixed
+		width 100%
+		
+	.col
+		display table-cell
+		
+
+@media (max-width 1420px)
+	.row
+		padding-left 15px
+		padding-right 15px	
+
+
+@media (min-width mobile)
+	estrutura()
+
+	.row
+		margin 0 auto
+		max-width site-width
+		
+
+@media (max-width mobile)
+	.row
+		padding-left 10px
+		padding-right 10px
+		
+	.col
+		text-align center
+		
+@media (min-width mobile) and (max-width 1310px)
+	.container
+		padding-left 10px
+		padding-right 10px
