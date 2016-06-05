@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 
 # Created by https://www.gitignore.io/api/node
 
 ### Node ###
+=======
+>>>>>>> ba8ec5021929d45627f5fb012b93f5a504aeb904
 # Logs
 logs
 *.log
@@ -35,4 +38,7 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+<<<<<<< HEAD
 
+=======
+>>>>>>> ba8ec5021929d45627f5fb012b93f5a504aeb904
