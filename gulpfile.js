@@ -14,7 +14,7 @@ gulp.task('stylus', function() {
   .pipe(stylus({
     compress: true
   }))
-  .pipe(gulp.dest('./app/css'));
+  .pipe(gulp.dest('./css'));
 });
 
 
@@ -29,7 +29,7 @@ gulp.task('jade', function() {
         },
         pretty: true
      }))
-     .pipe(gulp.dest('./app/'));
+     .pipe(gulp.dest('./'));
 });
 
 
@@ -40,7 +40,7 @@ gulp.task('js', function() {
   return gulp.src('assets/js/*.js')
     .pipe(uglify())
     .pipe(concat('main.min.js'))
-    .pipe(gulp.dest('app/js'));
+    .pipe(gulp.dest('./js'));
 });
 
 
