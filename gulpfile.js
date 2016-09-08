@@ -12,7 +12,7 @@ var watch = require('gulp-watch');
 gulp.task('stylus', function() {
   return gulp.src('./assets/stylus/*.styl')
   .pipe(stylus({
-    compress: true
+    // compress: true
   }))
   .pipe(gulp.dest('./'));
 });

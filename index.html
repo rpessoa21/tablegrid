@@ -9,7 +9,9 @@
     <title>TableGrid</title>
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="layout.css">
   </head>
   <body>
     <div class="wrapper">
@@ -18,12 +20,84 @@
           <div class="row">
             <div class="col">
               <h1>TableGrid</h1>
+              <h2>This is a really simple and responsive CSS grid.</h2>
+              <p>Here is an example to use this CSS code</p>
+              <div class="example">&lt;div class="row"&gt; Container &lt;/div&gt
+                <div class="row">
+                  <div class="col"> 
+                    <p> </p><code>&lt;div class="col"&gt; Column 1 &lt;/div&gt</code>
+                  </div>
+                  <div class="col"> <code>&lt;div class="col"&gt; Column 2 &lt;/div&gt</code></div>
+                  <div class="col"> <code>&lt;div class="col"&gt; Column 3 &lt;/div&gt</code></div>
+                </div>
+              </div>
+              <div class="example">&lt;div class="row"&gt; Container &lt;/div&gt
+                <div class="row">
+                  <div class="col"> 
+                    <p> </p><code>&lt;div class="col"&gt; Column 1 &lt;/div&gt</code>
+                  </div>
+                  <div class="col"> <code>&lt;div class="col"&gt; Column 2 &lt;/div&gt</code></div>
+                  <div class="col"> <code>&lt;div class="col"&gt; Column 3 &lt;/div&gt</code></div>
+                  <div class="col"> <code>&lt;div class="col"&gt; Column 4 &lt;/div&gt</code></div>
+                </div>
+              </div>
+              <div class="example">
+                <div class="row">
+                  <div class="col"> 
+                    <p>Col 1</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 2</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 3</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 4</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 5</p>
+                  </div>
+                </div>
+              </div>
+              <div class="example">
+                <div class="row">
+                  <div class="col"> 
+                    <p>Col 1</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 2</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 3</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 4</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 5</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 6</p>
+                  </div>
+                  <div class="col"> 
+                    <p>Col 7</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </header>
       <section>
         <article>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <p>This is the CSS code</p>
+              </div>
+            </div>
+          </div>
           <div class="container">
             <div class="row">
               <div class="col">
@@ -51,6 +125,50 @@
 		max-width: 1170px <br>
 	} <br>
 }</code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <p class="m">Stylus code</p>
+                <pre><code>site-width 	= 1170px <br>
+desktop		= 1024px <br>
+tablet 		= 768px <br>
+mobile 		= 640px <br>
+old-mobile 	= 480px <br>
+estrutura() <br>
+	.container <br>
+		display block <br>
+		margin 0 auto <br>
+		max-width site-width <br>
+		 <br>
+	.container-fluid <br>
+		display block <br>
+		 <br>
+	.row <br>
+	.max-row <br>
+		display table <br>
+		table-layout fixed <br>
+		width 100% <br>
+		 <br>
+	.col <br>
+		display table-cell <br>
+@media (min-width mobile) <br>
+	estrutura() <br>
+	.row <br>
+		margin 0 auto <br>
+		max-width site-width <br>
+@media (max-width mobile) <br>
+	.row <br>
+		padding-left 10px <br>
+		padding-right 10px <br>
+	.col <br>
+		text-align center <br>
+@media (min-width mobile) and (max-width 1310px) <br>
+	.container <br>
+		padding-left 10px <br>
+		padding-right 10px <br></code></pre>
               </div>
             </div>
           </div>

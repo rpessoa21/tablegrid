@@ -9,7 +9,9 @@ html(lang="pt-BR")
 		title TableGrid
 		link(type='image/x-icon', rel='shortcut icon', href='img/favicon.ico')
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700', rel='stylesheet', type='text/css')
+		link(type='text/css', rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css')
 		link(type='text/css', rel='stylesheet', href='style.css')
+		link(type='text/css', rel='stylesheet', href='layout.css')
 		
 
 	body
@@ -19,9 +21,78 @@ html(lang="pt-BR")
 					.row
 						.col
 							h1 TableGrid
+							h2 This is a really simple and responsive CSS grid.
+							p Here is an example to use this CSS code
+
+							.example
+								&lt;div class="row"&gt; Container &lt;/div&gt
+								.row
+									.col 
+										p 
+										code
+											&lt;div class="col"&gt; Column 1 &lt;/div&gt
+									.col 
+										code
+											&lt;div class="col"&gt; Column 2 &lt;/div&gt
+									.col 
+										code
+											&lt;div class="col"&gt; Column 3 &lt;/div&gt
+
+							.example
+								&lt;div class="row"&gt; Container &lt;/div&gt
+								.row
+									.col 
+										p 
+										code
+											&lt;div class="col"&gt; Column 1 &lt;/div&gt
+									.col 
+										code
+											&lt;div class="col"&gt; Column 2 &lt;/div&gt
+									.col 
+										code
+											&lt;div class="col"&gt; Column 3 &lt;/div&gt
+
+									.col 
+										code
+											&lt;div class="col"&gt; Column 4 &lt;/div&gt
+
+							.example
+								.row
+									.col 
+										p Col 1
+									.col 
+										p Col 2
+									.col 
+										p Col 3
+									.col 
+										p Col 4
+									.col 
+										p Col 5
+
+							.example
+								.row
+									.col 
+										p Col 1
+									.col 
+										p Col 2
+									.col 
+										p Col 3
+									.col 
+										p Col 4
+									.col 
+										p Col 5
+									.col 
+										p Col 6
+									.col 
+										p Col 7
+
 
 			section
 				article
+					.container
+						.row
+							.col
+								p This is the CSS code
 					.container
 						.row
 							.col
@@ -51,6 +122,49 @@ html(lang="pt-BR")
 										| 	} <br>
 										| }
 
+					.container
+						.row
+							.col
+								p.m Stylus code
+								pre
+									code
+										| site-width 	= 1170px <br>
+										| desktop		= 1024px <br>
+										| tablet 		= 768px <br>
+										| mobile 		= 640px <br>
+										| old-mobile 	= 480px <br>
+										|estrutura() <br>
+										|	.container <br>
+										|		display block <br>
+										|		margin 0 auto <br>
+										|		max-width site-width <br>
+										|		 <br>
+										|	.container-fluid <br>
+										|		display block <br>
+										|		 <br>
+										|	.row <br>
+										|	.max-row <br>
+										|		display table <br>
+										|		table-layout fixed <br>
+										|		width 100% <br>
+										|		 <br>
+										|	.col <br>
+										|		display table-cell <br>
+										| @media (min-width mobile) <br>
+										| 	estrutura() <br>
+										| 	.row <br>
+										| 		margin 0 auto <br>
+										| 		max-width site-width <br>
+										| @media (max-width mobile) <br>
+										| 	.row <br>
+										| 		padding-left 10px <br>
+										| 		padding-right 10px <br>
+										| 	.col <br>
+										| 		text-align center <br>
+										| @media (min-width mobile) and (max-width 1310px) <br>
+										| 	.container <br>
+										| 		padding-left 10px <br>
+										| 		padding-right 10px <br>
 
 		script(src='http://code.jquery.com/jquery-1.11.3.min.js')
 		script(src="main.min.js")
